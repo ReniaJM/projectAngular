@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularProjekt';
+
+  dog = new Dog('Reksio', 3)
+}
+
+class Dog{
+  constructor(public name:string, public age:number){
+
+  }
 }

@@ -1,5 +1,13 @@
-table{
-  border: 2px solid black;
+/*table{*/
+  /*border: 2px solid black;*/
 
-  width: 100%;
+  /*width: 100%;*/
+/*}*/
+
+.color{
+  color: blue;
+}
+
+.color2{
+  color: pink;
 }

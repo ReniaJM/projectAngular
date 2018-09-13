@@ -1,16 +1,77 @@
-<table border="1" width="100%">
-  <tr>
-    <th colspan="2">Witaj w aplikacji</th>
-  </tr>
-  <tr>
-    <td> <app-menu></app-menu> </td>
-    <td> <app-content></app-content> </td>
-  </tr>
-  <tr>
-    <th colspan="2"><app-created></app-created></th>
-  </tr>
-  {{title | uppercase}}
-  <!--to jest interpolacja stringów, zadeklarowane w app.comoponets-->
-</table>
+<!--<table border="1" width="100%">-->
+  <!--<tr>-->
+    <!--<th colspan="2">Witaj w aplikacji</th>-->
+  <!--</tr>-->
+  <!--<tr>-->
+    <!--<td> <app-menu *ngFor="let i of [1,2,3]"></app-menu> </td>-->
+    <!--<td> <app-content></app-content> </td>-->
+  <!--</tr>-->
+  <!--<tr>-->
+    <!--<th colspan="2"><app-created></app-created></th>-->
+  <!--</tr>-->
+  <!--{{title | uppercase}}-->
+  <!--&lt;!&ndash;to jest interpolacja stringów, zadeklarowane w app.comoponets&ndash;&gt;-->
+<!--</table>-->
+
+<!--<p> dni tygodnia</p>-->
+<!--<ul *ngFor=" let day of days; let e =even">-->
+  <!--<li *ngIf="e">-->
+    <!--{{day}}-->
+  <!--</li>-->
+<!--</ul>-->
 
 
+<!--<ul>-->
+  <!--<li *ngFor="let dooog of dogs">-->
+    <!--{{dooog.name}}-->
+
+  <!--</li>-->
+<!--</ul>-->
+
+<!--<ng-container *ngFor="let day of days">-->
+  <!--<div [ngSwitch]="day">-->
+    <!--<div *ngSwitchCase="'poniedziałęk'">montag</div>-->
+    <!--<div *ngSwitchCase="'wtorek'">ddd</div>-->
+    <!--<div *ngSwitchCase="'sroda'">trt</div>-->
+    <!--<div *ngSwitchCase="'czwartek'">iii</div>-->
+    <!--<div *ngSwitchDefault>sontag</div>-->
+  <!--</div>-->
+<!--</ng-container>-->
+
+<!--<h3 [className]="colorClass">witaj </h3>-->
+<!--<img [src]="logoUrl" alt="">-->
+<!--<input [maxLength]="length" [value]="inputTex">-->
+
+<!--<button [disabled]="isDisable" (click)="change()">dodaj</button>-->
+
+
+
+
+<!--&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+<!--<h3 [className] ="colorClass">propery binding</h3>-->
+
+<!--<input [disabled]="isDisable" (focus)="onFocus()">-->
+
+<!--&lt;!&ndash;// dzieki temu pola sa wylaczone dzieki disabled&ndash;&gt;-->
+<!--<br>-->
+<!--<input [disabled]="isDisable" (click)="onClick($event)">-->
+<!--<br>-->
+<!--<input [disabled]="isDisable" (mouseover)="onMouseMove($event)">-->
+<!--<br>-->
+<!--<input [disabled]="isDisable" (paste)=" onPaste()">{{inputTex}}-->
+
+<!--<button (click)="change()">zmiana</button>-->
+<!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+
+
+
+<h3 [className] ="colorClass">propery binding</h3>
+<p>Ten pracownik to {{profession}}, a jego umiejętnosći to {{skill}}</p>
+
+<label > zawód</label>
+<!--<input [value]="profession" (input)="saveP()">-->
+<input [(ngModel)]="profession">
+<br>
+<label >umijętnosci</label>
+<input [(ngModel)]="skill">
+<!--<input [value]="skill" (input)="saveS()">-->
